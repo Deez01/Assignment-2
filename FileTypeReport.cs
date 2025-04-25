@@ -36,8 +36,8 @@ namespace FileTypeReport {
         double size = byteSize;
         int idx = 0;
 
-        while (size >= 1024 && idx < units.Length - 1) {
-            size /= 1024;
+        while (size >= 1000 && idx < units.Length - 1) {
+            size /= 1000;
             idx++;
         }
         return $"{size:0.00} {units[idx]}";
