@@ -75,7 +75,7 @@ namespace FileTypeReport {
                             new XElement("td", item.Count),
                             new XElement("td", FormatByteSize(item.TotalSize))
                         )
-                    )
+                    );
       // END TODO
 
       var table = new XElement("table",
